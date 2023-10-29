@@ -1,0 +1,157 @@
+<head>
+    <title> swathi sethuraman portfolio</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(153, 47, 47);
+        } 
+       header {
+          background-color: rgb(0, 0, 0);
+            color: rgb(128, 172, 70);
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+profile-picture { 
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        nav{
+            background-color:black;
+            color: rgb(128, 190, 240);
+            text-align: center;
+        }
+
+        nav ul{ 
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li{
+            display: inline;
+            margin: 0 20px;
+        }
+nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-class {
+            background-color:papayawhip;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 10px 5px 5px black;
+
+        }
+
+        ul{ 
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+        }
+
+        footer{ 
+            text-align: center;
+            padding: 1rem 0;
+background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <img src="C:\Users\SARANYA\.vscode\Snapchat-206168033.jpg" alt="your profile picture"  class="profile-picture">
+        <h1>SWATHI SETHURAMAN</h1>
+        <p></p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li> <a href="#About">About</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skill">Skill</a></li>
+        <li><a href="#Extracurricular activities">Extracurricular</a></li>
+    </ul>
+</nav>
+<h1>About Me</h1>
+<p> Hello everyone ......
+      I'm s.swathi.I'm from sengipatti near Thanjavur . I studing b.sc[computer science] at bon secour college for women.I quickly attached with everyone.I'm a fast learner.I really enjoy solving a problem. I am interested in  learning new things;</p>
+</div>
+</section>
+
+
+<section id="Education"> 
+    <div class="section-class"> 
+        <h1>Education </h1>
+            <ul>
+                <li> School Name:kalaimagal higher secondary school</li>
+                <li> 12th mark: 547 </li>
+                <li>College Name:Bon Secourse College for women</li>
+                <li> SGPA:90%</li>
+                <li>Programming Language: java,Python,C and C++</li>
+                <li>Additional Course:MicroSoft Office -word,Excel,PowerPoint from Nan Mudhalvan ,<br>
+                                       Ethical hacking from MSME in Delhi<br>
+                                       Foundation of Cloud Computing from Nan Mudhalvan
+                </li>
+            </ul>
+    </div>
+</section >
+<section id="Skill">
+    <div class=" section-class">
+         <h1> Skill</h1>
+         <ul>
+            <li>ms-excel</li>
+            <li>ms-word</li>
+            <li>ms-ppt</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Database</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Java</li>
+         </ul>
+         </div>
+</section>
+
+<section id="Extracurricular activities"> 
+    <div class="section-class">
+        <h1>Extracurricular Activities</h1>
+        <ul>
+            <li>LEO Member,Badmiton,speaker,karate,web page creator,Essay writer, Reading books</li>
+        </ul>
+    </div>
+</section>
+<footer>
+<P>&copy;2023 SWATHI SETHURAMAN</P>
+</footer>
+ <script> 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click',function (e) { 
+        e.preventDefault();
+        const targetId= this.getAttribute('href').substring(1);
+        const targetElement =document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top:targetElement.offsetTop,
+                behavior:'smooth'
+            });
+        }
+    });
+});
+ </script>
